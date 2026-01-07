@@ -58,8 +58,8 @@ COPY *.sh /root
 RUN git clone https://github.com/osmocom/osmocom-bb trx && \
     cd trx && \
     git checkout 4f0acac4c1fa538082f54cb14bef0841aa9c8abb && \
-    cp /root/fun_with_paging_4f0acac4c1fa538082f54cb14bef0841aa9c8abb.diff . &&\
-    patch -p1 < fun_with_paging_4f0acac4c1fa538082f54cb14bef0841aa9c8abb.diff &&\
+    cp /root/fun_with_paging_4f0acac4c1fa538082f54cb14bef0841aa9c8abb.diff . && \
+    patch -p1 < fun_with_paging_4f0acac4c1fa538082f54cb14bef0841aa9c8abb.diff && \
     update-alternatives --set gcc /usr/bin/gcc-5 && \
     update-alternatives --set g++ /usr/bin/g++-5 && \
     cd src && \
