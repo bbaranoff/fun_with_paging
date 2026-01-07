@@ -1,6 +1,5 @@
 ```bash
-cker pull ghcr.io/bbaranoff/fun_with_paging:main
-HW htt
+sudo docker pull ghcr.io/bbaranoff/fun_with_paging:main
 ```
 
 HW :  
